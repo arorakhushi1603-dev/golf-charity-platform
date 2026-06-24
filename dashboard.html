@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<style>
+
+.dashboard{
+max-width:1000px;
+margin:40px auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+background:#22c55e;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.score-list{
+list-style:none;
+margin-top:15px;
+}
+
+.score-list li{
+padding:10px;
+background:#f3f4f6;
+margin-bottom:10px;
+border-radius:8px;
+}
+
+.logout-btn{
+background:#ef4444;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h1 id="welcomeText">
+Welcome
+</h1>
+
+<p id="charityText"></p>
+
+</div>
+
+<div class="card">
+
+<h2>Add Golf Score</h2>
+
+<input
+type="number"
+id="scoreInput"
+placeholder="Enter score">
+
+<button
+onclick="addScore()">
+
+Add Score
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Last 5 Scores</h2>
+
+<ul
+id="scoreList"
+class="score-list">
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Subscription Status</h2>
+
+<p id="subscriptionText">
+Inactive
+</p>
+
+</div>
+
+<div class="card">
+
+<button
+class="logout-btn"
+onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
