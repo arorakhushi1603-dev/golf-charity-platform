@@ -13,7 +13,7 @@ A web application that allows users to:
 ## Tech Stack
 
 - HTML
-- CSS
+- css
 - JavaScript
 - LocalStorage
 

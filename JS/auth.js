@@ -15,7 +15,7 @@ const password = document.getElementById("password").value;
 const charity = document.getElementById("charity").value;
 
 let users =
-JSON.parse(localStorage.getItem("users")) || [];
+jsON.parse(localStorage.getItem("users")) || [];
 
 const userExists = users.find(
 user => user.email === email
@@ -44,7 +44,7 @@ users.push(newUser);
 
 localStorage.setItem(
 "users",
-JSON.stringify(users)
+jsON.stringify(users)
 );
 
 alert("Account Created Successfully");

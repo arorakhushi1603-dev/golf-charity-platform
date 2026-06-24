@@ -142,7 +142,7 @@ document.getElementById(
 ).value;
 
 const users =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("users")
 ) || [];
 
@@ -157,7 +157,7 @@ if(user){
 
 localStorage.setItem(
 "currentUser",
-JSON.stringify(user)
+jsON.stringify(user)
 );
 
 alert("Login Successful");
