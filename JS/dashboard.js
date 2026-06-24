@@ -1,5 +1,5 @@
 const currentUser =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("currentUser")
 );
 
@@ -104,7 +104,7 @@ scoreList.appendChild(li);
 function updateUser(){
 
 let users =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("users")
 ) || [];
 
@@ -125,12 +125,12 @@ return user;
 
 localStorage.setItem(
 "users",
-JSON.stringify(users)
+jsON.stringify(users)
 );
 
 localStorage.setItem(
 "currentUser",
-JSON.stringify(currentUser)
+jsON.stringify(currentUser)
 );
 
 }

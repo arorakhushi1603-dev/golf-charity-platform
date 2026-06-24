@@ -1,5 +1,5 @@
 const users =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("users")
 ) || [];
 

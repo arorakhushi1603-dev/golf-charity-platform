@@ -1,7 +1,7 @@
 function selectCharity(charityName){
 
 let currentUser =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("currentUser")
 );
 
@@ -20,7 +20,7 @@ currentUser.charity =
 charityName;
 
 let users =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("users")
 ) || [];
 
@@ -41,12 +41,12 @@ return user;
 
 localStorage.setItem(
 "users",
-JSON.stringify(users)
+jsON.stringify(users)
 );
 
 localStorage.setItem(
 "currentUser",
-JSON.stringify(currentUser)
+jsON.stringify(currentUser)
 );
 
 alert(

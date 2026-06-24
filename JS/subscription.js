@@ -1,7 +1,7 @@
 function buyPlan(plan){
 
 let currentUser =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("currentUser")
 );
 
@@ -22,7 +22,7 @@ currentUser.subscription =
 plan;
 
 let users =
-JSON.parse(
+jsON.parse(
 localStorage.getItem("users")
 ) || [];
 
@@ -43,12 +43,12 @@ return user;
 
 localStorage.setItem(
 "users",
-JSON.stringify(users)
+jsON.stringify(users)
 );
 
 localStorage.setItem(
 "currentUser",
-JSON.stringify(currentUser)
+jsON.stringify(currentUser)
 );
 
 alert(
